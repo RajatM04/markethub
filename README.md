@@ -18,5 +18,5 @@ MarketHub is a sleek, responsive, and animated e-commerce interface built with *
 - **Version Control:** Git + GitHub
 
 ## 📍 Live Preview
-🔗 [Live Demo](https://markethub-1impnqm2j-rajat-mahadules-projects.vercel.app/)
+🔗 [Live Demo](https://markethub-sigma.vercel.app/)
 
