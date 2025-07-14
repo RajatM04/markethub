@@ -17,8 +17,9 @@ const cardData = [
   {
     icon: "https://cdn.lordicon.com/fmdwwfgs.json", 
     title: "Instant Messaging System",
-    short: "Track performance, views and conversions in in-built interactive dashboards.",
-    long: "We use advanced encryption and fraud detection to keep your money safe. Enjoy instant settlements and peace of mind with every transaction."
+   short: "Secure, real-time messaging with live chat analytics and user engagement tracking.",
+   long: "Our Instant Messaging System offers encrypted, real-time communication backed by intelligent user analytics."
+
   },
   {
     icon: "https://cdn.lordicon.com/xowcggal.json",
