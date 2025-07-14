@@ -1,0 +1,245 @@
+/* ========== HERO SECTION ========== */
+.hero {
+  min-height: 70vh;
+  display: flex;
+  margin: 0;
+  gap: 24px;
+  align-items: center;
+  padding: 0 60px;
+  background: #f8f9fd;
+}
+
+.hero__card {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 64px;
+  gap: 40px;
+  width: 100%;
+  min-height: 500px;
+  box-shadow: 0 12px 32px rgba(26, 35, 126, 0.06);
+  transition: all 0.3s ease;
+}
+
+.hero__content {
+  flex: 1;
+  color: #1e293b;
+  padding-right: 40px;
+}
+
+.hero__heading {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1a237e;
+  margin: 0 0 16px;
+  font-family: "Inter";
+  letter-spacing: -0.5px;
+}
+
+.hero__subheading {
+  font-size: 24px;
+  color: #1a237e;
+  margin-bottom: 24px;
+  font-family: "Inter";
+  letter-spacing: 0.2px;
+}
+
+.hero__description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #374151;
+  margin-bottom: 32px;
+  font-family: "Inter", sans-serif;
+  max-width: 600px;
+}
+
+.hero__button {
+  background-color: #1a237e;
+  color: #fff;
+  border: none;
+  padding: 14px 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(26, 35, 126, 0.12);
+}
+
+.hero__button:hover {
+  background-color: #3949ab;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(26, 35, 126, 0.18);
+}
+
+.hero__image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.hero__image img {
+  object-fit: cover;
+  height: 420px;
+  width: 420px;
+  margin-left: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+}
+
+
+/* ========== WHY MARKET HUB SECTION ========== */
+.why-market-hub {
+  margin: 100px auto 0;
+  max-width: 1440px;
+  text-align: center;
+  padding: 0 24px;
+}
+
+.why-title {
+  font-size: 2.75rem;
+  color: #1a237e;
+  margin-bottom: 48px;
+  font-family: "Inter";
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+/* Cards Layout */
+.why-cards {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 48px;
+  max-width: 1500px;
+  padding: 60px 20px;
+  margin: 0 auto;
+}
+
+
+/* ========== CARD ========== */
+.why-card {
+  position: relative;
+  width: 320px;
+  height: 460px;
+  perspective: 1000px;
+  overflow: visible;
+  flex: 1 1 320px;
+  transition: transform 0.3s ease;
+}
+
+
+.why-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.why-card.flipped .why-card-inner {
+  transform: rotateY(180deg);
+}
+
+.why-card-front,
+.why-card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.07);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* Front Side */
+.why-card-front {
+  background: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-size: 20px ;
+  color: #1a237e;
+}
+
+/* Back Side */
+.why-card-back {
+  background: linear-gradient(135deg, #1a237e, #3949ab);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* Icon Styles */
+.why-icon {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  font-size: 1.4rem;
+  background: #e8eaf6;
+  border-radius: 50%;
+  transition: background 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.why-card:hover .why-icon {
+  background: #1a237e;
+  color: white;
+  transform: scale(1.5) rotate(10deg);
+}
+.why-card:hover {
+   transform: scale(1) translateY(-10px);
+box-shadow: 0 4px 24px rgba(26, 35, 126, 0.15);
+}
+
+/* Button Styling */
+/* Front side button */
+.why-card-front .why-card-btn {
+  background: #1a237e;
+  color: white;
+}
+
+.why-card-front .why-card-btn:hover {
+  background: #3949ab;
+  transform: translateY(-2px);
+}
+
+/* Back side button */
+.why-card-back .why-card-btn {
+  background: white;
+  color: #1a237e;
+}
+
+.why-card-back .why-card-btn:hover {
+  background: rgba(255, 255, 255, 0.85);
+  transform: translateY(-2px);
+}
+
+.why-card-btn {
+  background: rgb(91, 139, 203);
+  color: #1a237e;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Inter";
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.why-card-btn:hover {
+  background: rgba(255, 255, 255, 0.85);
+  transform: translateY(-2px);
+}

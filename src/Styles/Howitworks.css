@@ -1,0 +1,92 @@
+.how-container {
+  max-width: 1335px;
+  margin: 100px auto;
+  padding: 24px;
+  font-family: 'Inter', sans-serif;
+}
+
+.how-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1a237e;
+  margin-bottom: 32px;
+}
+
+.how-title span {
+  color: #5c6bc0;
+}
+
+.how-card {
+  display: flex;
+  flex-wrap: wrap;
+  background: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 12px 36px rgba(184, 182, 182, 0.08);
+  padding: 40px;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.how-steps {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 441.81px;
+  gap: 24px;
+}
+
+.step-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 16px 20px;
+  background: #f5f7fe;
+  border-radius: 24px;
+  box-shadow: 0 8px 20px rgba(26, 34, 126, 0.12);
+  transition: all 0.3s ease;
+}
+
+.step-card:hover {
+  box-shadow: 0 8px 20px rgba(28, 41, 188, 0.326);
+  transform: translateY(-4px);
+}
+
+.step-icon {
+  font-size: 20px;
+  background: #1a237e;
+  color: white;
+  padding: 16px;
+  border-radius: 50%;
+  min-width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(26, 35, 126, 0.1);
+}
+
+.step-text {
+  flex: 1;
+}
+
+.step-card h4 {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #1a237e;
+  font-weight: 600;
+}
+
+.step-card p {
+  margin: 4px 0 0 0;
+  font-size: 0.92rem;
+  color: #444;
+}
+
+.how-video-card {
+  width: 658.59px;
+  height: 371.82px;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}

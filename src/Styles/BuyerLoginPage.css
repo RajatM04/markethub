@@ -1,0 +1,308 @@
+/* General Body Styles */
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    background: linear-gradient(135deg, #f4f7ff, #e9f0ff);
+    height: 100vh; /* Changed from min-height for stricter vertical centering */
+    display: flex;
+    justify-content: center; /* Horizontally centers content */
+    align-items: center;   /* Vertically centers content */
+    overflow: hidden; /* Prevent body scroll if content slightly overflows */
+}
+
+/* Main Container */
+.login-page-container {
+    width: 100%;
+    max-width: 1100px;
+    height: 680px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+    margin-left: 200px;
+    /* Removed margin: auto; as flexbox on body handles centering */
+}
+
+/* ... (rest of your CSS remains the same) ... */
+
+/* Left Panel Styles */
+.left-panel {
+    flex: 1;
+    background: linear-gradient(135deg, #6a5acd, #7b68ee);
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+.back-button {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: background 0.3s ease;
+}
+
+.back-button:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.market-hub-title {
+  position: absolute;
+  top: 90px;         /* adjust as needed */
+  left: 40px;        /* aligns it nicely inside the panel */
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.5px;
+  z-index: 10;
+}
+
+.illustration-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.abstract-shapes {
+    position: absolute;
+    left: 10%;
+    bottom: 50px;
+    z-index: 1;
+}
+
+
+
+.person-illustration {
+    position: absolute;
+    margin-bottom: 80px;
+    
+    height: 70%;
+    z-index: 2;
+    object-fit: fill;
+    transition: transform 0.4s ease;
+}
+
+.person-illustration:hover {
+    transform: scale(1.03);
+}
+
+/* Right Panel Styles */
+.right-panel {
+    flex: 1.5;
+    background-color: #ffffff;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* This also helps center content vertically within the right panel */
+    position: relative;
+}
+
+.seller-login-link {
+    text-align: right;
+    margin-bottom: 20px;
+    position: absolute; /* Changed to absolute to float it to top right */
+    top: 40px; /* Adjust as needed */
+    right: 40px; /* Adjust as needed */
+    z-index: 10; /* Ensure it's above other content if necessary */
+}
+
+.seller-login-link a {
+    color: #6a5acd;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.seller-login-link a:hover {
+    color: #5544cc;
+}
+
+.login-form-container {
+    max-width: 400px;
+    margin: auto; /* Keep this to center the form within the right-panel's available space */
+    width: 100%;
+}
+
+.login-title {
+    font-size: 2rem;
+    margin-bottom: 6px;
+    color: #1e293b;
+    font-weight: 700;
+}
+
+.login-subtitle {
+    color: #64748b;
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+
+.input-group {
+    margin-bottom: 24px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #111827;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #6a5acd;
+}
+
+.forgot-password {
+    display: block;
+    text-align: left;
+    color: #6a5acd;
+    text-decoration: none;
+    margin-top: -8px;
+    margin-bottom: 28px;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.forgot-password:hover {
+    color: #5544cc;
+}
+
+.login-button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(to right, #6a5acd, #7b68ee);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 14px rgba(106, 90, 205, 0.3);
+}
+
+.login-button:hover {
+    background: linear-gradient(to right, #5544cc, #6b5fcf);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(106, 90, 205, 0.4);
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 32px 0;
+    color: #9ca3af;
+    font-size: 14px;
+    position: relative;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background-color: #e5e7eb;
+}
+
+.divider:not(:empty)::before {
+    margin-right: 12px;
+}
+
+.divider:not(:empty)::after {
+    margin-left: 12px;
+}
+
+.social-login-icons {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 12px;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 46px;
+    height: 46px;
+    border: 1px solid #e5e7eb;
+    border-radius: 50%;
+    font-size: 20px;
+    text-decoration: none;
+    color: #374151;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.social-icon:hover {
+    background-color: #f3f4f6;
+    transform: translateY(-2px);
+}
+
+.social-icon.google {
+    color: #DB4437;
+}
+.social-icon.facebook {
+    color: #4267B2;
+}
+.social-icon.twitter {
+    color: #1DA1F2;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .login-page-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left-panel {
+        padding: 30px;
+        height: 300px;
+    }
+
+    .right-panel {
+        padding: 30px;
+    }
+
+    .person-illustration {
+        display: none;
+    }
+
+    /* Adjust seller login link for smaller screens */
+    .seller-login-link {
+        position: static; /* Reset to static flow */
+        text-align: center; /* Center it */
+        margin-bottom: 20px; /* Add some space below */
+    }
+}
