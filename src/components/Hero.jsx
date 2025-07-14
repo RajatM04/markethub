@@ -8,6 +8,7 @@ import LoginOptions from '../components/LoginOptions';
 import HowItWorks from './Howitworks';
 import StillQuestion from './StillQuestions';
 
+
 const textVariant = {
   hidden: { opacity: 0, y: 30 },
   visible: {
@@ -54,11 +55,14 @@ const Hero = () => (
       </motion.div>
     </section>
 
-    {/* Sections Below */}
+    {}
     <WhyChoose />
     <LoginOptions />
     <HowItWorks />
     <StillQuestion />
+
+
+   
   </>
 );
 
