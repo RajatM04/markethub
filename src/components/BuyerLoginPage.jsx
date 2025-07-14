@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import personImg from '../assets/personImg.png';
-import '../../src/Styles/BuyerLoginPage.css'; // Adjust the path as necessary
+import '../../src/Styles/BuyerLoginPage.css';
 const BuyerLoginPage = () => {
     const navigate = useNavigate();
 
